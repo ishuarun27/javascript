@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Conversion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Case Conversion </h1>
+<textarea id="textInput" placeholder="Type your text here..."></textarea>
+<br>
+<button onclick="convertToUpper()">Convert to Uppercase</button>
+<button onclick="convertToLower()">Convert to Lowercase</buttom>
+
+
+<h2>Output:</h2>
+<textarea id="output" readonly></textarea>
+
+<script>
+    function convertToUpper() {
+        const input = document.getElementById('textInput').value;
+        document.getElementById('output').value = input.toUpperCase();
+    }
+
+    function convertToLower() {
+        const input = document.getElementById('textInput').value;
+        document.getElementById('output').value = input.toLowerCase();
+    }
+    function convertToSwapCase() {
+        const input = document.getElementById('textInput').value;
+        document.getElementById('output').value = input.toLowerCase();
+        document.getElementById('output').value = input.toUpperCase();
+    }
+</script>
+
+</body>
+</html>

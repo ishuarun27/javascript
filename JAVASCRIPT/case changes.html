@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id ='demo'>
+
+
+    <button onclick = "converttouppercase('demo')">touppercase</button>
+    <button onclick = "converttolowercase('demo')">lowercase</button>
+    <div id="result"></div>
+    <script>
+    function converttouppercase(){
+        const text=document.getElementById('demo').value;
+        const ucase=text.toUpperCase();
+        document.getElementById('result').innerHTML=ucase;
+    }
+
+    function converttolowercase(){
+        const text=document.getElementById('demo').value;
+        const ucase=text.toLowerCase();
+        document.getElementById('result').innerHTML=ucase;
+    }
+    </script>
+
+</body>
+</html>
